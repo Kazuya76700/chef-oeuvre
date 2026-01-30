@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle, #020024, #090979, #00d4ff);
+    color: white;
+}
+
+/* MENU */
+.menu {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+}
+
+.menu a {
+    color: #00eaff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    text-shadow: 0 0 15px #00ffff;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* SECTION OUTILS */
+.outils-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.outils-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #00eaff;
+    letter-spacing: 2px;
+    animation: glowTitle 2s infinite alternate;
+}
+
+@keyframes glowTitle {
+    from { text-shadow: 0 0 10px #00eaff; }
+    to { text-shadow: 0 0 25px #00ffff; }
+}
+
+.outils-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.outil {
+    font-size: 50px;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 20px #00eaff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.outil:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 40px #00ffff;
+}
+
+/* DESCRIPTIONS */
+.descriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.description-card {
+    background: rgba(0,0,0,0.6);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #0077ff;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.description-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px #00ffff;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+}
